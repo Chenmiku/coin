@@ -1,0 +1,6 @@
+binance:
+  endpoint: https://api.binance.com
+  key:
+    apikey: P0Uq3cKR0JslCxqT6tqnrhLu22PVbpqzZAr5c840PttSnmV8sInzXQcAc4NleG9d
+    secretkey: h6GmNvX9BsTlJsFL20ihoGp7r8EU90Jwm2hdUKKXCHzonFhY7kyqcle1MQfeqtUX
+

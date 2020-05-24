@@ -1,0 +1,14 @@
+aws:
+  key:
+    accesskey: AKIAJQSDQV5DXXNJT35A
+    secretkey: 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
+  s3:
+    url: https://s3.ap-northeast-2.amazonaws.com/queens-smile-food/
+    bucketName: queens-smile-food
+  cloudFront:
+    host: https://image.queenssmile.co.kr
+  ses:
+    sender:
+      name: 퀸스스마일
+      email: info@queenssmile.co.kr
+

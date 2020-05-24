@@ -1,0 +1,13 @@
+# HTTP (HttpProperties)
+spring:
+  http:
+    converters:
+      preferred-json-mapper: jackson # Preferred JSON mapper to use for HTTP message conversion. By default, auto-detected according to the environment.
+    encoding:
+      charset: UTF-8 # Charset of HTTP requests and responses. Added to the "Content-Type" header if not set explicitly.
+      enabled: true # Whether to enable http encoding support.
+      force: false # Whether to force the encoding to the configured charset on HTTP requests and responses.
+      force-request: false # Whether to force the encoding to the configured charset on HTTP requests. Defaults to true when "force" has not been specified.
+      force-response: true # Whether to force the encoding to the configured charset on HTTP responses.
+#      mapping: # Locale in which to encode mapping.
+    log-request-details: false # Whether logging of (potentially sensitive) request details at DEBUG and TRACE level is allowed.

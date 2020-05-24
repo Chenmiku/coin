@@ -1,0 +1,11 @@
+app:
+  image:
+    path: /usr/share/nginx/html/images/app/
+  password:
+    encoder: 1
+
+
+spring:
+  profiles:
+    include: aws,core-plugin,management
+
