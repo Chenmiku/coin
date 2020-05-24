@@ -1,0 +1,10 @@
+# MULTIPART (MultipartProperties)
+spring:
+  servlet:
+    multipart:
+      enabled: true # Whether to enable support of multipart uploads.
+      file-size-threshold: 0B # Threshold after which files are written to disk.
+      location: ${java.io.tmpdir} # Intermediate location of uploaded files.
+      max-file-size: 3000MB # Max file size.
+      max-request-size: 3000MB # Max request size.
+      resolve-lazily: false # Whether to resolve the multipart request lazily at the time of file or parameter access.

@@ -1,0 +1,23 @@
+kakao:
+  api:
+    nativeKey: "f3c7094e4bad899c3867521b4ad4d134"
+    clientId: "b5c93a670fe2feb55993814f3a51670d"
+    javascriptKey: "6c70f9321588991ae071a35d6f695f46"
+    adminKey: "1978a2cad030cee06e5d7ea6fffb431a"
+    accessTokenUri: "https://kauth.kakao.com/oauth/token"
+    meUri: "https://kapi.kakao.com/v2/user/me"
+
+facebook:
+  api:
+    clientId: "132458394587764"
+    clientSecret: "7e4e5c31772dc4c61c754a6290330b15"
+    accessTokenUri: "https://graph.facebook.com/v2.12/oauth/access_token"
+    meUri: "https://graph.facebook.com/v2.12/me"
+    meFields: "id,name,email,picture,gender"
+
+naver:
+  api:
+    clientId: "XcPUSbKfx3IUKE5X4dK2"
+    clientSecret: "BxmHRtvT1w"
+    accessTokenUri: "https://nid.naver.com/oauth2.0/token"
+    meUri: "https://openapi.naver.com/v1/nid/me"

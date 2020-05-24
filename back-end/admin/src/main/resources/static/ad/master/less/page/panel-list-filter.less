@@ -1,0 +1,58 @@
+.panel-list-filter {
+
+    .bootstrap-datetimepicker-widget table td.disabled, .bootstrap-datetimepicker-widget table td.disabled:hover {
+        background-color: #eee !important;
+        border-radius: inherit !important;
+    }
+
+    .list-filter-date {
+        position: relative;
+
+        &.date-wave {
+            &:after {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                content: '';
+                display: block;
+                width: 10px;
+                height: 2px;
+                margin-top: -1px;
+                margin-right: -20px;
+                background-color: @text-color;
+            }
+        }
+    }
+
+    .panel-body {
+        padding-bottom: 0;
+        @media (max-width: @screen-sm-max) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .control-label {
+        padding-right: 0;
+    }
+    fieldset {
+        .control-label {
+            margin-top: 5px;
+        }
+        padding-bottom: 5px;
+        border-bottom: 1px dashed #eee;
+        margin-bottom: 5px;
+        &.last-child, &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+}
+
+#excel-list-filter {
+    //@media (max-width: @screen-xs-max) {
+    //    .text {
+    //        //display: none;
+    //    }
+    //}
+}

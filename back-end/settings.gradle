@@ -1,0 +1,5 @@
+rootProject.name = 'coin'
+include 'core'
+include 'api'
+include 'admin'
+

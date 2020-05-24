@@ -1,0 +1,1 @@
+https://gwonsungjun.github.io/articles/2019-04/gradle_multi_module

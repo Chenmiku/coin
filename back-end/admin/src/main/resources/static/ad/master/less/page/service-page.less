@@ -1,0 +1,88 @@
+.service-page {
+  color: #111;
+
+  h1, .h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38/24;
+    margin-top: 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.41;
+    margin-bottom: 0;
+  }
+
+  .navi {
+    background-color: @brand-primary;
+    padding: 20px 0;
+    .logo {
+      height: 26px;
+    }
+  }
+  .header {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    .title {
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e3e3e3;
+      font-weight: 900;
+    }
+    .description {
+      margin-top: 16px;
+      font-weight: 700;
+    }
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 9.505px 1rem;
+    border-radius: 22px;
+    font-weight: 500;
+    transition: all .15s ease-in-out;
+  }
+  .btn-dark {
+    background-color: #000;
+    color: #fff;
+    &:hover {
+      background-color: #ee03a8;
+    }
+  }
+
+  .form-group {
+    > label {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+  }
+  .form-control {
+    font-size: 16px;
+    padding: 9.505px 1rem;
+    height: 44px;
+  }
+
+  @media @mobile {
+  }
+  @media @tablet {
+    h1, .h1 {
+      font-size: 28px;
+    }
+  }
+  @media @desktop {
+    h1, .h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    .header {
+      .title {
+        padding-bottom: 32px;
+      }
+    }
+  }
+  @media @desktop-lg {
+  }
+}

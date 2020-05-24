@@ -1,0 +1,70 @@
+admin-sidebar:
+  sections:
+    - title: Bảng điều khiển #대시보드
+      roles: SUPER,ADMIN
+      elements:
+        - type: ONE
+          title: Bảng điều khiển #대시보드
+          roles: SUPER,ADMIN
+          description:
+          url: /admin/dashboard
+          icon: icon-speedometer
+    - title: Người dùng #사용자 관리
+      roles: SUPER,ADMIN
+      elements:
+        - type: ONE
+          title: Người dùng #사용자 관리
+          roles: SUPER,ADMIN
+          description:
+          url: /admin/user
+          icon: icon-people
+    - title: Bài viết #게시판
+      roles: SUPER,ADMIN
+      elements:
+        - type: ONE
+          title: Câu hỏi #문의
+          roles: SUPER,ADMIN
+          description:
+          url: /admin/qna
+          icon: icon-doc
+        - type: ONE
+          title: Bài viết #공지사항
+          roles: SUPER,ADMIN
+          description:
+          url: /admin/post
+          icon: icon-doc
+        - type: MULTI
+          id: faq
+          title: Câu hỏi thường gặp
+          icon: icon-docs
+          section:
+            elements:
+              - title: Câu hỏi thường gặp #게시글
+                description:
+                roles: SUPER,ADMIN
+                url: /admin/faq
+              - title: Loại câu hỏi thường gặp #카테고리
+                description:
+                roles: SUPER,ADMIN
+                url: /admin/category-faq
+        - type: ONE
+          title: Tài khoản/ Điều khoản #약관/개인정보취급
+          roles: SUPER,ADMIN
+          description:
+          url: /admin/document
+          icon: icon-doc
+    - title: Cài đặt #환경설정
+      roles: SUPER,ADMIN
+      elements:
+        - type: ONE
+          title: Admin #관리자
+          roles: SUPER,ADMIN
+          description:
+          url: /admin/manager
+          icon: fa fa-male
+        - type: ONE
+          title: Cài đặt #환경설정
+          roles: SUPER,ADMIN
+          description:
+          url: /admin/setting
+          icon: icon-settings

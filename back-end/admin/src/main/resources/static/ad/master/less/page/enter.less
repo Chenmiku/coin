@@ -1,0 +1,746 @@
+// 공통 스타일
+@font-face {
+  font-family: 'SamsungOneKoreanKorean';
+  src: url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot);
+  src: url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.eot?#iefix) format("embedded-opentype"),
+  url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff2) format("woff2"),
+  url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.woff) format("woff"),
+  url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-400.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'SamsungOneKoreanKorean';
+  src: url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot);
+  src: url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.eot?#iefix) format("embedded-opentype"),
+  url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff2) format("woff2"),
+  url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.woff) format("woff"),
+  url(https://cdn.samsung.com/etc/designs/smg/sec/font/SamsungOneKorean-700.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans';
+  src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansBd.eot);
+  //src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansBd.eot?#iefix) format("embedded-opentype"),
+  src: local('※'),
+  url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansBd.woff) format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans';
+  src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansMd.eot);
+  //src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansMd.eot?#iefix) format("embedded-opentype"),
+  src: local('※'),
+  url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansMd.woff) format("woff");
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans';
+  src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansRg.eot);
+  //src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansRg.eot?#iefix) format("embedded-opentype"),
+  src: local('※'),
+  url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansRg.woff) format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+@break-point-custom: 720px;
+
+.popup-enter {
+  max-width: 720px;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+  padding-top: 20px;
+  color: #111;
+  font-size: 14px;
+  @media (min-width: @break-point-custom) {
+    .col-sm-6 {
+      float: left;
+      width: 50%;
+    }
+
+    padding-top: 40px;
+    font-size: 16px;
+  }
+
+  .container-fluid {
+    @media (min-width: @break-point-custom) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .font-samsung-sharp {
+    font-family: 'SamsungSharpSans' !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h1, h2, h3, h4, h5, h6, p, label,
+  .h1, .h2, .h3, .h4, .h5, .h6, .p {
+    line-height: 19/16;
+    font-family: SamsungOneKorean, SamsungOneKoreanKorean;
+  }
+
+  .h1 {
+    font-size: 28px;
+    font-weight: bold;
+    @media (min-width: @break-point-custom) {
+      font-size: 28px;
+    }
+  }
+
+  .h2 {
+    font-size: 18px;
+    font-weight: bold;
+    @media (min-width: @break-point-custom) {
+      font-size: 24px;
+    }
+  }
+
+  .h3 {
+    font-size: 18px;
+    font-weight: bold;
+    @media (min-width: @break-point-custom) {
+      font-size: 20px;
+    }
+  }
+
+  .h4 {
+    font-size: 16px;
+    font-weight: bold;
+    @media (min-width: @break-point-custom) {
+      font-size: 18px;
+    }
+  }
+
+  .font-weight-bold {
+    font-weight: bold;
+  }
+
+  .color-gray1 {
+    color: #757575;
+  }
+  .color-gray2 {
+    color: #666;
+  }
+
+  .d-only-m {
+    @media (min-width: @break-point-custom) {
+      display: none;
+    }
+  }
+
+  .d-only-pc {
+    display: none;
+    @media (min-width: @break-point-custom) {
+      display: inline;
+    }
+  }
+
+  .parsley-errors-list {
+    margin-top: 5px;
+    > li {
+      color: #d0011c;
+      font-size: 13px;
+      line-height: 23px;
+    }
+    @media (min-width: @break-point-custom) {
+      font-size: 14px;
+    }
+  }
+
+  .mb-0 {
+    margin-bottom: 0 !important;
+  }
+
+}
+
+// ======================================================================================
+// preloader
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: @zindex-modal + 10;
+  overflow: hidden;
+  cursor: wait;
+  background-color: #fff;
+  &.upload {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 15px;
+    padding-right: 15px;
+    .dialog {
+      background-color: #fff;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      max-width: 300px;
+      margin: 0 auto;
+      border-radius: 6px;
+      .h4 {
+        font-weight: bold;
+        color: #111;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .loader,
+  .loader:before,
+  .loader:after {
+    border-radius: 50%;
+  }
+  .loader {
+    color: #6236ff;
+    font-size: 3px;
+    text-indent: -99999em;
+    margin: 0 auto;
+    position: relative;
+    width: 10em;
+    height: 10em;
+    box-shadow: inset 0 0 0 1em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before,
+  .loader:after {
+    position: absolute;
+    content: '';
+  }
+  .loader:before {
+    width: 5.5em;
+    height: 10.2em;
+    background: #fff;
+    border-radius: 0;
+    //border-radius: 10.2em 0 0 10.2em;
+    top: -0.1em;
+    left: -0.1em;
+    -webkit-transform-origin: 5.1em 5.1em;
+    transform-origin: 5.1em 5.1em;
+    -webkit-animation: load2 2s infinite ease 1.5s;
+    animation: load2 2s infinite ease 1.5s;
+  }
+  .loader:after {
+    width: 5.5em;
+    height: 10.2em;
+    background: #fff;
+    border-radius: 0;
+    //border-radius: 0 10.2em 10.2em 0;
+    top: -0.1em;
+    left: 4.9em;
+    -webkit-transform-origin: 0.1em 5.1em;
+    transform-origin: 0.1em 5.1em;
+    -webkit-animation: load2 2s infinite ease;
+    animation: load2 2s infinite ease;
+  }
+  @-webkit-keyframes load2 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load2 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// 컴포넌트 스타일
+.popup-enter {
+
+  // Header
+  .popup-header {
+    margin-bottom: 36px;
+    @media (min-width: @break-point-custom) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // Step
+  .enter-step {
+    margin-left: 0;
+    margin-bottom: 50px;
+    > li {
+      margin-right: 22px;
+      color: #757575;
+      padding: 0;
+      &:last-child {
+        margin-right: 0;
+      }
+      span {
+        vertical-align: middle;
+        line-height: 20px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+      }
+
+      &.active {
+        span {
+          color: #111;
+          font-weight: bold;
+        }
+      }
+      &.check {
+        span {
+          color: #111;
+        }
+      }
+    }
+    @media (min-width: @break-point-custom) {
+      > li {
+        margin-right: 28px;
+        span {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+        &.check {
+          span {
+            color: @brand-primary;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .c-checkbox input[type=checkbox]:checked + span,
+  .c-radio input[type=checkbox]:checked + span,
+  .c-checkbox input[type=radio]:checked + span,
+  .c-radio input[type=radio]:checked + span {
+
+  }
+  .radio,
+  .checkbox {
+    label {
+      padding-left: 30px;
+    }
+    .check-active {
+      margin-right: 10px;
+      margin-left: -30px;
+    }
+    @media (min-width: @break-point-custom) {
+      label {
+        padding-left: 34px;
+      }
+
+      .check-active {
+        margin-left: -34px;
+      }
+    }
+  }
+  .radio-inline,
+  .checkbox-inline {
+    padding-left: 27px;
+
+    & + .radio-inline,
+    & + .checkbox-inline {
+      margin-left: 30px;
+    }
+    label {
+      margin-bottom: 0;
+    }
+    .check-active {
+      margin-right: 7px;
+      margin-left: -27px;
+    }
+  }
+
+  // Checkbox
+  .c-checkbox {
+    label {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 24px;
+    }
+    .check-active {
+      width: 24px;
+      height: 24px;
+      border-width: 2px;
+      border-color: #999;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    input[type=checkbox]:checked + .check-active {
+      background-image: url("/ad/img/enter/checkbox.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-width: 0;
+    }
+    @media (min-width: @break-point-custom) {
+      label {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .check-active {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  // Radio
+  .c-radio {
+    margin: 0;
+    label {
+      font-size: 16px;
+      line-height: 21px;
+      color: #757575;
+    }
+    .check-active {
+      border-width: 2px;
+      border-color: #999;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -3px;
+        margin-top: -3px;
+      }
+    }
+    input[type=radio]:checked + .check-active {
+      background-color: @brand-primary !important;
+    }
+    input[type=radio]:checked ~ .input-label {
+      color: @brand-primary;
+    }
+
+    &.parsley-error {
+      .check-active {
+        border-color: #cb0206;
+      }
+    }
+
+    @media (min-width: @break-point-custom) {
+      label {
+        line-height: 25px;
+      }
+
+      .check-active {
+        width: 24px;
+        height: 24px;
+        &:after {
+          width: 8px;
+          height: 8px;
+          margin-left: -4px;
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+
+  .form-control {
+    border-radius: 3px;
+    border: solid 2px #dedede;
+    font-size: 14px;
+    padding: 13px 12px;
+    line-height: 17px;
+    height: 43px;
+    font-family: SamsungOneKorean, SamsungOneKoreanKorean;
+    &::placeholder {
+      color: #757575;
+    }
+    @media (min-width: @break-point-custom) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  textarea.form-control {
+    line-height: 22px;
+  }
+
+  .btn {
+    font-family: SamsungOneKorean, SamsungOneKoreanKorean;
+    font-size: 16px;
+    padding: 12px;
+    font-weight: bold;
+    height: 43px;
+    line-height: 19px;
+  }
+
+  .btn-round {
+    border-radius: 30px;
+    height: 50px;
+    padding: 15px;
+    @media (min-width: @break-point-custom) {
+      font-size: 20px;
+      line-height: 24px;
+      height: 60px;
+      padding: 18px;
+    }
+  }
+
+  .btn-fix-width {
+    width: 178px;
+    &.btn-round {
+      width: 199px;
+      @media (min-width: @break-point-custom) {
+        width: 232px;
+      }
+    }
+  }
+
+  .btn-toggle {
+    font-size: 16px;
+    padding: 6px 12px;
+    height: 35px;
+    color: #757575 !important;
+    border: 2px solid #dadada;
+    font-weight: bold;
+    background-color: transparent !important;
+    &.btn-primary {
+      border-color: @brand-primary;
+      color: @brand-primary !important;
+    }
+    &:focus {
+      background-color: transparent;
+      color: @brand-primary;
+      box-shadow: none;
+    }
+    &:active {
+      border-color: @brand-primary;
+      color: @brand-primary !important;
+      box-shadow: none;
+    }
+    @media (min-width: @break-point-custom) {
+      padding: 7px 12px;
+      height: 37px;
+    }
+  }
+
+  .text-length {
+    font-size: 12px;
+    color: #757575;
+  }
+}
+
+// ======================================================================================
+
+// 고유 스타일
+.popup-enter {
+
+  // 약관 전체 동의
+  .terms-check-all {
+    margin-top: 0;
+    margin-bottom: 25px;
+    @media (min-width: @break-point-custom) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // 약관 섹션
+  .section-terms {
+    margin-bottom: 40px;
+    .h4 {
+      margin-bottom: 12px;
+    }
+    .form-group {
+      margin-bottom: 0;
+      label {
+        color: #111;
+      }
+    }
+    .text-terms {
+      margin-bottom: 14px;
+      min-height: 160px;
+      background: #fff;
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 21px;
+      overflow-y: scroll;
+      resize: none;
+    }
+
+    @media (min-width: @break-point-custom) {
+      .form-control {
+        min-height: 130px;
+      }
+    }
+  }
+
+  // 폼 섹션
+  .form-block {
+    margin-bottom: 40px;
+    .h3, .h4 {
+      margin-bottom: 18px;
+    }
+    .form-group {
+      margin-bottom: 12px;
+    }
+  }
+
+  // 폼 섹션 : 지원자
+  .form-block-applyer {
+    @media (min-width: @break-point-custom) {
+      .form-group {
+        margin-bottom: 0;
+      }
+
+      .row {
+        margin: 0 -5px;
+      }
+
+      .col-sm-6 {
+        padding: 0 5px;
+      }
+    }
+  }
+
+  // 태그 리스트
+  .list-tag {
+    .btn-toggle {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  // 출품 가이드
+  .section-apply-guide {
+    margin-bottom: 24px;
+    border-top: 1px solid #ebebeb;
+    .panel-default {
+      margin-top: 0;
+      border-bottom: 1px solid #ebebeb !important;
+      box-shadow: none;
+    }
+    .panel-heading {
+      padding: 17px 0;
+      .panel-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #111;
+        a {
+          display: block;
+          .up {
+            display: block;
+          }
+          .down {
+            display: none;
+          }
+          &.collapsed {
+            .up {
+              display: none;
+            }
+            .down {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .panel-body {
+      border-top: 0 !important;
+      padding: 20px 0 40px 0;
+      h5, h4, p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 0;
+      }
+    }
+    @media (min-width: @break-point-custom) {
+
+    }
+  }
+
+  // 이벤트 동의
+  .section-event-agree {
+    margin-bottom: 40px;
+    label {
+      font-size: 16px;
+      line-height: 23px;
+      font-weight: bold;
+      color: #111;
+    }
+    @media (min-width: @break-point-custom) {
+      font-size: 18px;
+      line-height: 26px;
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.modal-custom {
+  .modal-dialog.modal-sm {
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-body {
+    font-family: SamsungOneKorean, SamsungOneKoreanKorean;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #111;
+    //padding: 20px;
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 24px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 0;
+    }
+    .mute {
+      color: #666;
+    }
+  }
+  .modal-footer {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    font-family: SamsungOneKorean, SamsungOneKoreanKorean;
+  }
+}
+
+

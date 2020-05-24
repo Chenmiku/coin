@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: 9anWY*eg73@cA4cE
+    url: jdbc:mysql:aurora://qsf-db-master.queenssmile.co.kr:3306,qsf-db-slave.queenssmile.co.kr:3306/queenssmile_v2_prod_scheme?useSSL=false&serverTimezone=KST
+    username: queenssmile_v2_prod
+    hikari:
+      connection-timeout: 60000
+      validation-timeout: 60000
+      maximum-pool-size: 2
+
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: lazy
+        enabled: true
+  jpa:
+    database: MYSQL
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      use-new-id-generator-mappings: false
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comment: false
+        format_sql: false
+        type: trace
+
+# DB 암호화
+crypto:
+  key: M09BNThLQUFDRkNGN0FXMg==
+  iv: A1EC0QAGBAK144TK

@@ -1,0 +1,20 @@
+admin:
+  seo:
+    url: ${app.client.host}
+    title:
+    subject:
+    description:
+    keywords:
+    copyright: ${spring.application.copyright}
+    siteName:
+    browserColor:
+    twitterUsername:
+    image:
+
+  email:
+    siteName: ${spring.application.name}
+    frontHost: ${app.client.host}
+    logoUri: ${app.api.host}/assets/images/logo-wh.png
+    unsubscribeUri: ${app.api.host}/api/v1/subscribe/email?subscribe=false&email=
+    primaryColor: "#0000FF"
+

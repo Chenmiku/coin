@@ -1,0 +1,9 @@
+core:
+  plugin:
+    gaTrackingId:
+    channelId:
+    jusoKey: U01TX0FVVEgyMDE4MDIyNjE1MDkyNDEwNzY5NTI=
+    googleMap: AIzaSyBKeQP7wGxJBH3OepV2uf6LGSV_YWnmNd0
+    googlePlace: AIzaSyBKeQP7wGxJBH3OepV2uf6LGSV_YWnmNd0
+    googleReCaptchaSecret: 6LeeWmEUAAAAAMbbdqzM7Xo0byySf5Q9oviIyD43 # dev@galaxiacon.com 계정으로 발급받음.
+    exchangeId: Am8bC5Hqj8PmHNws9B3b6gsRJPioTw1Y

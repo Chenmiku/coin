@@ -1,0 +1,48 @@
+bootJar{ enabled = false }
+jar { enabled = true }
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+//        compile files('libs/binance-api-1.0.9.jar')
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: "io.spring.dependency-management"
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+dependencies {
+    // SPRING
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+
+    // DATABASE
+    implementation 'org.hibernate:hibernate-java8:5.0.12.Final' // 엔티티의 LocalDateTime 필드가 MySQL의 DATETIME Datatype 으로 바뀌지 않는 이슈 해결(하이버네이트 자바8 디펜던시필요
+    runtimeOnly 'mysql:mysql-connector-java:8.0.19'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.6.0'
+
+
+    // AWS
+    implementation 'com.amazonaws:aws-java-sdk-ses:1.11.247'
+    implementation 'com.amazonaws:aws-java-sdk-s3:1.11.247'
+
+    // UTILS
+    implementation 'org.apache.tika:tika-core:1.13' // content type 으로 file extension 가져오// https://mvnrepository.com/artifact/org.jsoup/jsoup
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'org.apache.commons:commons-text:1.8'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.11.3'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.twelvemonkeys.common:common-image:3.3.2' // 이미지 리사이즈
+    implementation 'org.apache.poi:poi:4.1.0'
+    implementation 'org.apache.poi:poi-ooxml:4.1.0'
+
+    // Binance
+    compile group: 'com.webcerebrium', name: 'binance-api', version: '1.0.9'
+}
